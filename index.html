@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Password Strength Checker</title>
+</head>
+
+<body>
+
+ <!-- First type: Live checking -->
+    <div class="container first">
+        <h2>Password Strength Checker (On-Change)</h2>
+
+        <!-- Password input form -->
+        <form id="passwordForm-1">
+            <label for="password">Enter Password:</label>
+            <input type="password" id="password-1" name="password" required>
+            <div id="strength-1" class="strength"></div> <!-- Display dynamic result here -->
+        </form>
+    </div>
+
+<!-- Second type: Submit password for strength -->
+    <div class="container">
+        <h2>Password Strength Checker (Submit to Check)</h2>
+
+        <!-- Password input form -->
+        <form id="passwordForm-2">
+            <label for="password">Enter Password:</label>
+            <input type="password" id="password-2" name="password" required>
+            <button type="submit">Check Strength</button>
+        </form>
+
+        <!-- Display password strength -->
+        <div id="strength-2" class="strength"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
